@@ -156,6 +156,11 @@ h3 {
   width: 100%;
   text-align: center;
 }
+
+/* .social-media a {
+  text-decoration: none;
+} */
+
 .social-media__link {
   background-color: var(--secondary-bg-color);
   padding: 1px;
@@ -244,7 +249,7 @@ h3 {
   margin-left: 20px;
 }
 
-.aboutme img {
+.aboutme img, .certificates img {
   display: block;
   margin: 30px auto 10px auto;
   width: 50%;
@@ -322,6 +327,25 @@ h3 {
   animation: 10s rotating-base infinite alternate linear;
 }
 
+.certificates h2 {
+  padding: 10px;
+  margin: 40px 30px;
+  text-align: center;
+}
+
+.technical-certificates {
+  max-width: 1400px;
+  margin: 25px auto 35px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+
 @media all and (max-width: 500px) {
   .worklist {
     grid-template-columns: 1fr;
@@ -332,7 +356,7 @@ h3 {
     font-size: 22px;
   }
 
-  .aboutme-description, .biography div {
+  .aboutme-description, .biography div, .technical-certificates {
     flex-direction: column;
   }
 
