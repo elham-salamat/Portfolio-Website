@@ -134,7 +134,7 @@ h3 {
 .container__button {
   background-color: #fff;
   font-family: inherit;
-  color: undefined;
+  color: #0b1e20;
   padding: 5px;
   border: 1px solid rgba(0 ,0 ,0 , 0.3);
   border-radius: 5px;
@@ -146,7 +146,7 @@ h3 {
 .button {
   background-color: #fff;
   font-family: inherit;
-  color: undefined;
+  color: #0b1e20;
   padding: 5px;
   border: 1px solid rgba(0 ,0 ,0 , 0.3);
   border-radius: 5px;
@@ -195,6 +195,11 @@ h3 {
   width: 100%;
   text-align: center;
 }
+
+.social-media a {
+  text-decoration: none;
+}
+
 .social-media__link {
   background-color: #d2dbcf;
   padding: 1px;
@@ -290,7 +295,7 @@ h3 {
   margin-left: 20px;
 }
 
-.aboutme img {
+.aboutme img, .certificates img {
   display: block;
   margin: 30px auto 10px auto;
   width: 50%;
@@ -406,6 +411,32 @@ h3 {
           animation: 10s rotating-base infinite alternate linear;
 }
 
+.certificates h2 {
+  padding: 10px;
+  margin: 40px 30px;
+  text-align: center;
+}
+
+.technical-certificates {
+  max-width: 1400px;
+  margin: 25px auto 35px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact {
+  text-align: center;
+}
+
+
 @media all and (max-width: 500px) {
   .worklist {
     -ms-grid-columns: 1fr;
@@ -417,7 +448,7 @@ h3 {
     font-size: 22px;
   }
 
-  .aboutme-description, .biography div {
+  .aboutme-description, .biography div, .technical-certificates {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

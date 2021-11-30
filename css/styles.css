@@ -135,7 +135,7 @@ h3 {
 .container__button, .button {
   background-color: var(--button-color);
   font-family: inherit;
-  color: var(secondary-font-color);
+  color: var(--secondary-font-color);
   padding: 5px;
   border: 1px solid rgba(0 ,0 ,0 , 0.3);
   border-radius: 5px;
@@ -157,9 +157,9 @@ h3 {
   text-align: center;
 }
 
-/* .social-media a {
+.social-media a {
   text-decoration: none;
-} */
+}
 
 .social-media__link {
   background-color: var(--secondary-bg-color);
@@ -341,7 +341,7 @@ h3 {
   justify-content: space-between;
 }
 
-.contact h1 {
+.contact {
   text-align: center;
 }
 
