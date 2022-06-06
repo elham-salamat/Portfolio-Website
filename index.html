@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css?<?= time(); ?>">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -133,52 +133,11 @@
           <br>
           <input class="button" type="submit" value="send message">
         </form>
-        <?php
-        if (isset($_GET['result']) && isset($_GET['msg'])) {
-          $message = "";
-
-          switch ($_GET['result']) {
-
-            case "failed":
-              switch ($_GET['msg']) {
-
-                case "invalidemail":
-                  $message = "Please enter a valid email!";
-                  break;
-
-                case "trylater":
-                  $message = "Your email has not been sent. Please try it again!";
-                  break;
-              }
-              echo
-              "
-                  <div class='alert alert-danger alert-dismissable'>
-                      <button aria-hidden='true' data-dismiss='alert' class='close' type='button'>×</button>
-                      {$message}
-                  </div>
-              ";
-              break;
-
-              break;
-
-            case "done":
-              $message = "Your email has been sent successfuly. I will contact you ASAP";
-              echo
-              "
-                  <div class='alert alert-success alert-dismissable'>
-                      <button aria-hidden='true' data-dismiss='alert' class='close' type='button'>×</button>
-                      {$message}
-                  </div>
-              ";
-              break;
-          }
-        }
-        ?>
       </div>
     </section>
   </div>
-  <script src="js/tota11y.min.js?<?= time(); ?>"></script>
-  <script src="js/portfolio.js?<?= time(); ?>"></script>
+  <script src="js/tota11y.min.js"></script>
+  <script src="js/portfolio.js"></script>
 </body>
 
 </html>
