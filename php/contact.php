@@ -33,10 +33,10 @@ if (InvalidEmail($email)) {
     $mail = mail($to, $subject, $emailContent, $headers);
 
     if ($mail) {
-        header("location: https://elhamsalamat.com/?result=done&msg=success");
+        header("location: https://elhamsalamat.com");
         exit();
     } else {
-        header("location: https://elhamsalamat.com/?result=failed&msg=trylater");
+        header("location: https://elhamsalamat.com");
         exit();
     }
 }
