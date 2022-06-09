@@ -789,17 +789,6 @@ body a {
   padding: 20px 0 15px 0;
 }
 
-.projects div {
-  /* display: flex; */
-  margin: 15px auto;
-  padding: 5px;
-}
-
-.projects img {
-  width: 200px;
-  height: 150px;
-}
-
 .contact {
   background-color: #d1d1e0;
   color: #000033;
@@ -838,34 +827,12 @@ body a {
 }
 
 .myprojects {
-  width: 98%;
   background-color: #001133;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-evenly;
-  align-items: center;
-  column-gap: 10px;
-  row-gap: 10px;
-}
-
-.heading {
-  height: 13vh;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: #fff;
-  color: #001133;
-  margin-top: 3px;
-  border-radius: 5px;
-}
-
-.heading h1 {
-  text-align: center;
-  padding: 15px 5px;
-  font-size: 28px;
+  display: flex;
 }
 
 .project-item {
-  height: 85vh;
+  height: 700px;
   position: relative;
   background-color: #fff;
   color:#001133;
@@ -874,13 +841,12 @@ body a {
   align-items: flex-start;
   padding: 0px 50px;
   border-radius: 5px;
+  width: 100%
 }
 
 .project-item img {
-  position: absolute;
-  top: 0;
   margin: 15px auto;
-  width: 380px;
+  width: 400px;
   height: 280px;
 }
 
@@ -933,197 +899,143 @@ body a {
   margin: 15px 0;
 }
 
-@media (max-width:1440px) {
-  .myprojects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .heading {
-    grid-column-end: 3;
-  }
-  
-  .heading {
+@media screen and (max-width:426px) {
+
+  body {
     width: 100%;
+    overflow-x: hidden;
+    font-size: 15px;
   }
   
-  .heading h1 {
-    text-align: center;
-    padding: 5px 5px 20px 5px; 
+  h1 {
+    font-size: 25px;
+  }
+    
+  h2 {
     font-size: 22px;
   }
-  
-  
-  .project-item {
-    height: 150vh;
+    
+  h3 {
+    font-size: 18px;
   }
-
-  @media screen and (max-width:768px) {
-
-    body {
-      width: 100%;
-      overflow-x: hidden;
-      font-size: 15px;
-    }
+    
+  .logo {
+    letter-spacing: 3px;
+    font-size: 20px;
+  }
   
-    h1 {
-      font-size: 25px;
-    }
-    
-    h2 {
-      font-size: 22px;
-    }
-    
-    h3 {
-      font-size: 18px;
-    }
-    
-    .logo {
-      letter-spacing: 3px;
-      font-size: 20px;
-    }
-  
-    .nav-list {
-      position: absolute;
-      right: 0px;
-      height: 30vh;
-      top: 11vh;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transform: translateX(100%);
-      transition: transfrom 0.5s ease-in;
-      background-color:  #000033;
-      border-bottom: 1px solid #fff;
-    }
+  .nav-list {
+    position: absolute;
+    right: 0px;
+    height: 30vh;
+    top: 11vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transfrom 0.5s ease-in;
+    background-color:  #000033;
+    border-bottom: 1px solid #fff;
+  }
       
-    .burger-menu {
-      display: block;
-    }
+  .burger-menu {
+    display: block;
+  }
   
-    .introduction h1 {
-      letter-spacing: 2px;
-    }
+  .introduction h1 {
+    letter-spacing: 2px;
+  }
     
      
-    .description {
-      padding: 0 10px;
-    }
-    
-    .description h1.name {
-      margin: 0;
-    }
-    
-    .container__picture {
-      width: 45%;
-    }
-    
-    .description .my-message {
-      max-width: 70%;
-      margin: 10px auto;
-    }
-    
-    .footer {
-      margin: 20px 0;  
-    }
-    
-    .footer a {
-      font-size: 24px;
-    }
-   
-    .aboutme-description__item:first-child {
-      padding: 5px 10px;
-      font-size: 18px;
-    }
-    
-    .aboutme-description__item:nth-child(2){
-      max-width: 97%;
-      padding: 5px 0;
-    }
-    
-    .aboutme-description__item:last-child{
-      text-align: center;
-      width: 25%;
-      margin: 10px auto 50px auto;
-    }
-    
-    .button {
-      background-color: #004080;
-      font-family: inherit;
-      color: #fff;
-      padding: 5px;
-      border: 1px solid rgba(0 ,0 ,0 , 0.3);
-      border-radius: 5px;
-      transition: 0.5s opacity;
-    }
-    
-    .projects div {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .projects img {
-      margin: 10px auto;
-    }
-    
-    .contact {
-      background-color: #d1d1e0;
-      color: #000033;
-      display: flex;
-      flex-direction: column;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    
-    .contact h3{
-      text-align: center;
-      padding: 20px 0 15px 0;
-      font-size: 22px;
-      letter-spacing: 1px;
-    }
-    
-    .contactinfo a {
-      color: #000033;
-    }
-    
-    .contactinfo {
-      text-align: center;
-    }
-    
-    .form {
-      width: 65%;
-      margin: 5px auto 25px auto;
-    }  
-  
-    .myprojects {
-      width: 98%;
-      background-color: #001133;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .heading {
-      width: 100%;
-    }
-    
-    .heading h1 {
-      text-align: center;
-      padding: 5px 5px 20px 5px; 
-      font-size: 22px;
-    }
-    
-    .project-item {
-      width: 100%;
-      height: 150vh;
-    }
-    
-    .project-item img {
-      margin: 15px auto;
-      width: 380px;
-      height: 280px;
-    }
-    
+  .description {
+    padding: 0 10px;
   }
+    
+  .description h1.name {
+    margin: 0;
+  }
+    
+  .container__picture {
+    width: 45%;
+  }
+    
+  .description .my-message {
+    max-width: 70%;
+    margin: 10px auto;
+  }
+    
+  .footer {
+    margin: 20px 0;  
+  }
+    
+  .footer a {
+    font-size: 24px;
+  }
+   
+  .aboutme-description__item:first-child {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+    
+  .aboutme-description__item:nth-child(2){
+    max-width: 97%;
+    padding: 5px 0;
+  }
+    
+  .aboutme-description__item:last-child{
+    text-align: center;
+    width: 25%;
+    margin: 10px auto 50px auto;
+  }
+    
+  .button {
+    background-color: #004080;
+    font-family: inherit;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid rgba(0 ,0 ,0 , 0.3);
+    border-radius: 5px;
+    transition: 0.5s opacity;
+  }
+    
+  .projects div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projects img {
+    margin: 10px auto;
+  }
+    
+  .contact {
+    background-color: #d1d1e0;
+    color: #000033;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+    
+  .contact h3{
+    text-align: center;
+    padding: 20px 0 15px 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+    
+  .contactinfo a {
+    color: #000033;
+  }
+    
+  .contactinfo {
+    text-align: center;
+  }
+    
+  .form {
+    width: 65%;
+    margin: 5px auto 25px auto;
+  }  
 }​
 
 
